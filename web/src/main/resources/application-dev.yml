@@ -1,0 +1,12 @@
+# 开发环境配置
+test:
+  read:
+    message: dev
+spring:
+  datasource:
+    druid:
+      type: com.alibaba.druid.pool.DruidDataSource
+      driverClassName: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/zqm?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=TRUE&serverTimezone=GMT%2B8
+      username: root
+      password:

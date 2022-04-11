@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <classPathEntry location="D:\software\apache-maven-3.6.3\conf\repository\mysql\mysql-connector-java\8.0.13\mysql-connector-java-8.0.13.jar" />
+
+    <context id="Mysql2Tables" targetRuntime="MyBatis3">
+        <plugin type="org.mybatis.generator.plugins.RowBoundsPlugin"/>
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://10.38.1.103:3306/net_slice?useUnicode=true&amp;characterEncoding=UTF-8"
+                        userId="root"
+                        password="Sylincom123#@!">
+        </jdbcConnection>
+
+        <javaTypeResolver >
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="com.ict.ac.dao.entity" targetProject="D:\project\test\zeus\common\src\main\java">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="resources.mapper"  targetProject="D:\project\test\zeus\common\src\main">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.ict.ac.dao.mapper" targetProject="D:\project\test\zeus\common\src\main\java">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <table tableName="t_ns_type_info">
+        </table>
+
+    </context>
+</generatorConfiguration>
