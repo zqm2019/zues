@@ -7,10 +7,19 @@ package com.it.zqm.result;
  */
 public final class Result {
 
+    /**
+     * 错误码
+     */
     private int code;
 
+    /**
+     * 错误信息
+     */
     private String message;
 
+    /**
+     * 返回结果具体信息，有错误为null
+     */
     private Object data;
 
     public Result setCode(int code) {

@@ -17,6 +17,9 @@ import javax.validation.Valid;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
+/**
+ * 测试接口入口
+ */
 @RestController
 @RequestMapping("test")
 @Slf4j

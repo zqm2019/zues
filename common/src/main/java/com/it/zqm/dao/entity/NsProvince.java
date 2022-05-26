@@ -15,15 +15,18 @@ import java.util.Date;
  * @date 2020-11-04
  */
 @Data
-public class NsProvince  implements Serializable {
+public class NsProvince implements Serializable {
 
     private static final long serialVersionUID = -6903243427609485167L;
     /**
      * 自增列
      */
+
     private Integer provinceId;
     /**
      * 省份代码
+     *
+     * @since v1.0
      */
     private String provinceCode;
     /**
